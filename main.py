@@ -1,8 +1,7 @@
 import requests
 from json import loads
 from time import sleep as wait
-from sys import stderr
-from sys import exit
+from sys import stderr, exit
 
 def get_data(nat, number):
     url = "https://randomuser.me/api/?inc=gender,name,nat,email,login,location,phone,id&results={}&nat={}".format(number, nat)
